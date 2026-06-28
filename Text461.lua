@@ -821,10 +821,10 @@ local menuData = {
     ["AUTO FARM"] = {
         "AUTO FARM ESCAPES",
     },
-    ["CRIMINALS"] = {
+    ["CRIMINAL"] = {
         "ATURDIR A LOS SHERIFFS",
         "TP A TAREA",
-        "AUTO TP A TASK (BUTTON)"
+        "AUTO TP A TAREA (BUTTON)"
     },
     ["PROXIMITY PROMPT"] = {
         "INSTANT PROMPT",
