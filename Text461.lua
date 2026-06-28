@@ -759,8 +759,8 @@ end
 local scrollConfig = {
     ["MAIN"] = true,
     ["ESP"] = true,
-    ["SHAWARMA"] = true,
-    ["OP"] = true,
+    ["CRIMINAL"] = true,
+    ["SHERIFF"] = true,
     ["ANTI"] = true,
     ["TELEPORT"] = true,
     ["PROXIMITY PROMPT"] = true,
@@ -772,7 +772,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","SHERIFF","OP","OBBY","ANTI","PROXIMITY PROMPT","LOBBY","FPS","YOUTUBE"}
+local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","ANTI","PROXIMITY PROMPT","LOBBY","FPS","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
     "DESYNC",
@@ -807,7 +807,6 @@ local menuData = {
     ["SHERIFF"] = {
         "AUTO DISPARAR A CRIMINALES",
         "CONGELAR A TODOS (CLIENT)",
-        "ANTI FLOOR INSPECTOR", 
     },
     ["TELEPORT"] = {
         "TP TOOL",
@@ -818,18 +817,14 @@ local menuData = {
     ["OBBY"] = {
         "AUTO COMPLETAR OBBY",
         "COMPLETAR OBBY",
-        "DAR SHAWARMA",
-        "AUTO DAR SHAWARMA",
     },
     ["AUTO FARM"] = {
         "AUTO FARM ESCAPES",
     },
-    ["PROXIMIT"] = {
-        "INSTANT PROMPT",
-        "NOCLIP A PROXIMITY PROMPT",
-        "AUMENTAR EL RANGO DEL PROMPT",
-        "activar prompt (Click)",
-        "TODOS LOS PROMPT ACTIVOS"
+    ["CRIMINALS"] = {
+        "ATURDIR A LOS SHERIFFS",
+        "TP A TAREA",
+        "AUTO TP A TASK (BUTTON)"
     },
     ["PROXIMITY PROMPT"] = {
         "INSTANT PROMPT",
@@ -941,11 +936,11 @@ if topTitle then
         elseif opt == "AUTO DISPARAR A CRIMINALES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text79/refs/heads/main/Text79.lua"))()
                             
-        elseif opt == "ANTI FLOOR INSPECTOR" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text287/refs/heads/main/Text287.lua"))()
+        elseif opt == "TP A TAREA" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text367/refs/heads/main/Text367.lua"))()
 
-        elseif opt == "ANTI INSPECTOR (BUG)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text295/refs/heads/main/Text295.lua"))()
+        elseif opt == "ATURDIR A LOS SHERIFFS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text82/refs/heads/main/Text82.lua"))()
                             
         elseif opt == "AUMENTAR EL RANGO DEL PROMPT A 20" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text270/refs/heads/main/Text270.lua"))()
