@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL  (SHAMARMA)
+-- SBS HUB COMPLETO FINAL  (NPC OR DIE)
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -224,7 +224,7 @@ local noToggleButtons = {
     ["TP ADENTRO DE LA TIENDA"] = true,
     ["TP A JUGADOR"] = true,
     ["BOOST INFINITOS(VAS A OBTENER TODO)"] = true,
-    ["DAR SHAWARMA"] = true,
+    ["COMPLETAR OBBY"] = true,
     ["HACER SHAWARMA"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
@@ -772,7 +772,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","SHAWARMA","OP","TELEPORT","ANTI","PROXIMITY PROMPT","LOBBY","FPS","YOUTUBE"}
+local menuOrder = {"MAIN","ESP","SHERIFF","OP","OBBY","ANTI","PROXIMITY PROMPT","LOBBY","FPS","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
     "DESYNC",
@@ -787,9 +787,8 @@ local menuData = {
     "FLY",
     },
     ["ESP"] = {
-        "ESP A ANOMALIAS", 
-        "ESP A NO ANOMALIAS",
-        "ESP A JUGADORES",
+        "ESP A SHERIFFS",
+        "ESP A CRIMINALES",
     },
     ["OP"] = {
         "Chat Gratis (Gui)",
@@ -805,9 +804,9 @@ local menuData = {
         "PLAYER NAME.",
         "FLING PLAYER",
     },
-    ["ANTI"] = {
-        "ANTI SCREAMER",
-        "ANTI INSPECTOR (BUG)",
+    ["SHERIFF"] = {
+        "AUTO DISPARAR A CRIMINALES",
+        "CONGELAR A TODOS (CLIENT)",
         "ANTI FLOOR INSPECTOR", 
     },
     ["TELEPORT"] = {
@@ -816,9 +815,9 @@ local menuData = {
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
     },
-    ["SHAWARMA"] = {
-        "HACER SHAWARMA",
-        "AUTO HACER SHAWARMA",
+    ["OBBY"] = {
+        "AUTO COMPLETAR OBBY",
+        "COMPLETAR OBBY",
         "DAR SHAWARMA",
         "AUTO DAR SHAWARMA",
     },
@@ -921,26 +920,26 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "METER AL INSPECTOR (GASTA BOOST)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text275/refs/heads/main/Text275.lua"))()
+        elseif opt == "ESP A SHERIFFS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text362/refs/heads/main/Text362.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
                             
-        elseif opt == "ESP A ANOMALIAS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text256/refs/heads/main/Text256.lua"))()
+        elseif opt == "ESP A CRIMINALES" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text77/refs/heads/main/Text77.lua"))()
                             
-        elseif opt == "ESP A NO ANOMALIAS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text257/refs/heads/main/Text257.lua"))()
+        elseif opt == "AUTO COMPLETAR OBBY" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text71/refs/heads/main/Text71.lua"))()
                             
-        elseif opt == "BOOST INFINITOS(VAS A OBTENER TODO)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text264/refs/heads/main/Text264.lua"))()
+        elseif opt == "COMPLETAR OBBY" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text72/refs/heads/main/Text72.lua"))()
 
-        elseif opt == "+110% DE GANANCIA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text263/refs/heads/main/Text263.lua"))()
+        elseif opt == "CONGELAR A TODOS (CLIENT)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text81/refs/heads/main/Text81.lua"))()
                             
-        elseif opt == "ANTI SCREAMER" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text296/refs/heads/main/Text296.lua"))()
+        elseif opt == "AUTO DISPARAR A CRIMINALES" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text79/refs/heads/main/Text79.lua"))()
                             
         elseif opt == "ANTI FLOOR INSPECTOR" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text287/refs/heads/main/Text287.lua"))()
