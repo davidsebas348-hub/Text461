@@ -219,7 +219,7 @@ local noToggleButtons = {
     ["Chat Gratis (Gui)"] = true,
     ["GET THE TOOL SPORTS DRINK"] = true,
     ["GET THE TOOL TRAP"] = true,
-    ["GET THE TOOL TIME MACHINE"] = true,  
+    ["CONGELAR A LOS CRIMINALES (CLIENT)"] = true,  
     ["GET THE TOOL SPAWN DECOY"] = true,
     ["TP ADENTRO DE LA TIENDA"] = true,
     ["TP A JUGADOR"] = true,
@@ -806,7 +806,7 @@ local menuData = {
     },
     ["SHERIFF"] = {
         "AUTO DISPARAR A CRIMINALES",
-        "CONGELAR A TODOS (CLIENT)",
+        "CONGELAR A LOS CRIMINALES (CLIENT)",
     },
     ["TELEPORT"] = {
         "TP TOOL",
@@ -930,7 +930,7 @@ if topTitle then
         elseif opt == "COMPLETAR OBBY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text72/refs/heads/main/Text72.lua"))()
 
-        elseif opt == "CONGELAR A TODOS (CLIENT)" then
+        elseif opt == "CONGELAR A LOS CRIMINALES (CLIENT)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text81/refs/heads/main/Text81.lua"))()
                             
         elseif opt == "AUTO DISPARAR A CRIMINALES" then
