@@ -773,10 +773,10 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","ANTI","DINERO","LOBBY","FPS","YOUTUBE"}
+local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","DINERO","FPS","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
-    "DESYNC",
+    "INVISIBLE POR 5 SEGUNDOS",
     "RESISTENCIA INFINITA",
     "SPEED",
     "JUMPPOWER",  
@@ -822,7 +822,7 @@ local menuData = {
     ["DINERO"] = {
         "AUTO RECOLECTAR DINERO (RAPIDO)",
         "AUTO RECOLECTAR DINERO (lento)",
-        "AUTO FARMEAR DINERO (RAPIDO)",
+        "AUTO FARMEAR DINERO",
     },
     ["CRIMINAL"] = {
         "ATURDIR A LOS SHERIFFS",
