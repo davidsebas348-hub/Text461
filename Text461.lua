@@ -827,7 +827,7 @@ local menuData = {
     ["CRIMINAL"] = {
         "ATURDIR A LOS SHERIFFS",
         "TP A TAREA",
-        "AUTO TP A TAREA (BUTTON)"
+        "AUTO TP A TAREA"
     },
     ["PROXIMITY PROMPT"] = {
         "INSTANT PROMPT",
@@ -963,8 +963,8 @@ if topTitle then
         elseif opt == "Chat Gratis (gui)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text300/refs/heads/main/Text300.lua"))()
                             
-        elseif opt == "TP ADENTRO DE LA TIENDA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text278/refs/heads/main/Text278.lua"))()
+        elseif opt == "AUTO TP A TAREA" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text80/refs/heads/main/Text80.lua"))()
 
         elseif opt == "REVIVIR" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text277/refs/heads/main/Text277.lua"))()
