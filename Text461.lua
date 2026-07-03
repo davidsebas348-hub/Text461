@@ -226,7 +226,7 @@ local noToggleButtons = {
     ["TP A JUGADOR"] = true,
     ["BOOST INFINITOS(VAS A OBTENER TODO)"] = true,
     ["COMPLETAR OBBY"] = true,
-    ["HACER SHAWARMA"] = true,  
+    ["QUITAR LAS PAREDES INVISIBLES"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
 }
@@ -395,7 +395,7 @@ end
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1,0,0,50)
 title.BackgroundColor3 = Color3.fromRGB(0,0,0)
-title.Text = "SBS HUB | Scary Shawarma"
+title.Text = "SBS HUB | Npc or Die"
 title.TextColor3 = Color3.fromRGB(255,255,255)
 title.Font = Enum.Font.GothamBold
 title.TextScaled = true
@@ -776,8 +776,9 @@ local scrollConfig = {
 local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","DINERO","FPS","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
-    "INVISIBLE POR 5 SEGUNDOS",
+    "INVISIBLE POR 7 SEGUNDOS",
     "RESISTENCIA INFINITA",
+    "QUITAR LAS PAREDES INVISIBLES",
     "SPEED",
     "JUMPPOWER",  
     "GRAVITY",
@@ -821,7 +822,7 @@ local menuData = {
     },
     ["DINERO"] = {
         "AUTO RECOLECTAR DINERO (RAPIDO)",
-        "AUTO RECOLECTAR DINERO (lento)",
+        "AUTO RECOLECTAR DINERO (LENTO)",
         "AUTO FARMEAR DINERO",
     },
     ["CRIMINAL"] = {
@@ -966,8 +967,8 @@ if topTitle then
         elseif opt == "AUTO TP A TAREA" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text80/refs/heads/main/Text80.lua"))()
 
-        elseif opt == "REVIVIR" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text277/refs/heads/main/Text277.lua"))()
+        elseif opt == "INVISIBLE POR 7 SEGUNDOS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text366/refs/heads/main/Text366.lua"))()
                             
         elseif opt == "" then
             loadstring("getgenv().OnlyVisible = not getgenv().OnlyVisible")()
@@ -996,8 +997,8 @@ if topTitle then
         elseif opt == "FLING PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text156/refs/heads/main/Text156.lua"))()
 
-        elseif opt == "SHOW PANELS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text342/refs/heads/main/Text342.lua"))()
+        elseif opt == "QUITAR LAS PAREDES INVISIBLES" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text365/refs/heads/main/Text365.lua"))()
                             
         elseif opt == "AIMBOT INSTANT" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text423/refs/heads/main/Text423.lua"))()
