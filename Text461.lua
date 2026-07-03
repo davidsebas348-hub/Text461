@@ -167,8 +167,9 @@ local buttonTitles = {
     ["LAG SERVER (NO LOBBY)"] = "TROLL",
     ["JUMP(BUTTON)"] = "JUMP PAD",
 
-    ["TP TOOL"] = "TOOL",
-    ["MAPA"] = "TP DENTRO DE LA TIENDA",
+    ["AUTO FARMEAR DINERO"] = "FARMEO",
+    ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
+    
     ["NOMBRE DE EL JUGADOR"] = "JUGADORES",
     
 
@@ -214,7 +215,7 @@ local noToggleButtons = {
     ["DESNC"] = true,
     ["Fps Boost"] = true,
     ["REVIVIR"] = true,
-    ["+110% DE GANANCIA"] = true,
+    ["AUTO FARMEAR DINERO"] = true,
     ["METER AL INSPECTOR (GASTA BOOST)"] = true,
     ["Chat Gratis (Gui)"] = true,
     ["GET THE TOOL SPORTS DRINK"] = true,
@@ -772,11 +773,11 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","ANTI","PROXIMITY PROMPT","LOBBY","FPS","YOUTUBE"}
+local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","ANTI","DINERO","LOBBY","FPS","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
     "DESYNC",
-    "INVISIBLE",
+    "RESISTENCIA INFINITA",
     "SPEED",
     "JUMPPOWER",  
     "GRAVITY",
@@ -818,8 +819,10 @@ local menuData = {
         "AUTO COMPLETAR OBBY",
         "COMPLETAR OBBY",
     },
-    ["AUTO FARM"] = {
-        "AUTO FARM ESCAPES",
+    ["DINERO"] = {
+        "AUTO RECOLECTAR DINERO (RAPIDO)",
+        "AUTO RECOLECTAR DINERO (lento)",
+        "AUTO FARMEAR DINERO (RAPIDO)",
     },
     ["CRIMINAL"] = {
         "ATURDIR A LOS SHERIFFS",
@@ -942,20 +945,20 @@ if topTitle then
         elseif opt == "ATURDIR A LOS SHERIFFS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text82/refs/heads/main/Text82.lua"))()
                             
-        elseif opt == "AUMENTAR EL RANGO DEL PROMPT A 20" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text270/refs/heads/main/Text270.lua"))()
+        elseif opt == "RESISTENCIA INFINITA" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text76/refs/heads/main/Text76.lua"))()
                             
         elseif opt == "DESYNC" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text428/refs/heads/main/Text428.lua"))()
 
-        elseif opt == "TODOS LOS PROMPT ACTIVOS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text272/refs/heads/main/Text272.lua"))()
+        elseif opt == "AUTO RECOLECTAR DINERO (RAPIDO)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text363/refs/heads/main/Text363.lua"))()
                             
-        elseif opt == "ACTIVAR PROMPT (Click)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text271/refs/heads/main/Text271.lua"))()
+        elseif opt == "AUTO RECOLECTAR DINERO (LENTO)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text364/refs/heads/main/Text364.lua"))()
 
-        elseif opt == "ESP A JUGADORES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text456/refs/heads/main/Text456.lua"))()
+        elseif opt == "AUTO FARMEAR DINERO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text73/main/Text73.lua"))()
                             
         elseif opt == "Chat Gratis (gui)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text300/refs/heads/main/Text300.lua"))()
