@@ -266,8 +266,12 @@ local textboxButtons = {
     variable = "FLY_SPEED",
     url = nil
     },
-    ["SIZE"] = {
+    ["TAMAÑO"] = {
     variable = "HITBOX_SIZE",
+    url = nil
+    },
+    ["TRANSPARENCIA 0-1"] = {
+    variable = "HITBOX_TRANSPARENCY",
     url = nil
     },
     ["NOMBRE DE EL JUGADOR"] = {
@@ -286,9 +290,9 @@ local textboxButtons = {
     variable = "AIMBOT_FOV",
     url = nil
     },
-    ["BULLET SIZE"] = {
-    variable = "BULLET_SIZE",
-    url = "https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"
+    ["RANGO"] = {
+    variable = "HitRadius",
+    url = nil
     },
     ["XRAY-TRANSPARENCY"] = {
     variable = "XRAY_TRANSPARENCY",
@@ -776,8 +780,8 @@ local scrollConfig = {
 local menuOrder = {"MAIN","ESP","COMBAT","OBBY","DINERO","FPS"}
 local menuData = {
     ["MAIN"] = {
-    "INVISIBLE POR 7 SEGUNDOS",
-    "FORZAR EL MOVIMIENTO",
+    "INVISIBLE",
+    "DESYINC",
     "RESISTENCIA INFINITA",
     "QUITAR LAS PAREDES INVISIBLES",
     "SPEED",
@@ -790,8 +794,8 @@ local menuData = {
     "FLY",
     },
     ["ESP"] = {
-        "ESP A LOS ENEMIGOS (ROJO)",
-        "ESP A EL EQUIPO (VERDE)",
+        "ESP A JUGADORES",
+        "ESP A BARRY",
     },
     ["OP"] = {
         "Chat Gratis (Gui)",
@@ -808,8 +812,11 @@ local menuData = {
         "FLING PLAYER",
     },
     ["COMBAT"] = {
-        "AUTO DISPARAR A ENEMIGOS",
-        "AIMBOT TOTAL",",
+        "KILL AURA",
+        "RANGO",
+        "EXPANDIR HITBOX",
+        "TAMAÑO",
+        "TRANSPARENCIA 0-1",
     },
     ["TELEPORT"] = {
         "TP TOOL",
@@ -920,8 +927,8 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "ESP A LOS ENEMIGOS (ROJO)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text90/refs/heads/main/Text90.lua"))()
+        elseif opt == "KILL AURA" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text64/refs/heads/main/Text64.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
