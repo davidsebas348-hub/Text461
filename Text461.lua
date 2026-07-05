@@ -773,10 +773,11 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","CRIMINAL","SHERIFF","OBBY","DINERO","FPS","YOUTUBE"}
+local menuOrder = {"MAIN","ESP","COMBAT","OBBY","DINERO","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE POR 7 SEGUNDOS",
+    "FORZAR EL MOVIMIENTO",
     "RESISTENCIA INFINITA",
     "QUITAR LAS PAREDES INVISIBLES",
     "SPEED",
@@ -789,8 +790,8 @@ local menuData = {
     "FLY",
     },
     ["ESP"] = {
-        "ESP A SHERIFFS",
-        "ESP A CRIMINALES",
+        "ESP A LOS ENEMIGOS (ROJO)",
+        "ESP A EL EQUIPO (VERDE)",
     },
     ["OP"] = {
         "Chat Gratis (Gui)",
@@ -806,9 +807,9 @@ local menuData = {
         "PLAYER NAME.",
         "FLING PLAYER",
     },
-    ["SHERIFF"] = {
-        "AUTO DISPARAR A CRIMINALES",
-        "CONGELAR A LOS CRIMINALES (CLIENT)",
+    ["COMBAT"] = {
+        "AUTO DISPARAR A ENEMIGOS",
+        "AIMBOT TOTAL",",
     },
     ["TELEPORT"] = {
         "TP TOOL",
@@ -919,14 +920,14 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "ESP A SHERIFFS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text362/refs/heads/main/Text362.lua"))()
+        elseif opt == "ESP A LOS ENEMIGOS (ROJO)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text90/refs/heads/main/Text90.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
                             
-        elseif opt == "ESP A CRIMINALES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text77/refs/heads/main/Text77.lua"))()
+        elseif opt == "ESP A EL EQUIPO (VERDE)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text89/refs/heads/main/Text89.lua"))()
                             
         elseif opt == "AUTO COMPLETAR OBBY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text71/refs/heads/main/Text71.lua"))()
@@ -940,8 +941,8 @@ if topTitle then
         elseif opt == "AUTO DISPARAR A CRIMINALES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text79/refs/heads/main/Text79.lua"))()
                             
-        elseif opt == "TP A TAREA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text367/refs/heads/main/Text367.lua"))()
+        elseif opt == "EXPANDIR HITBOX" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text368/refs/heads/main/Text368.lua"))()
 
         elseif opt == "ATURDIR A LOS SHERIFFS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text82/refs/heads/main/Text82.lua"))()
@@ -1000,11 +1001,11 @@ if topTitle then
         elseif opt == "QUITAR LAS PAREDES INVISIBLES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text365/refs/heads/main/Text365.lua"))()
                             
-        elseif opt == "AIMBOT INSTANT" then
+        elseif opt == "AIMBOT RAPIDO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text423/refs/heads/main/Text423.lua"))()
                             
-        elseif opt == "AIMBOT OP" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text421/refs/heads/main/Text421.lua"))()
+        elseif opt == "AIMBOT TOTAL" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text93/refs/heads/main/Text93.lua"))()
 
         elseif opt == "X-RAY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text147/refs/heads/main/Text147.lua"))()
@@ -1012,8 +1013,8 @@ if topTitle then
         elseif opt == "TP TO PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text408/refs/heads/main/Text408.lua"))()
 
-        elseif opt == "BULLET TRACERS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text434/refs/heads/main/Text434.lua"))()      
+        elseif opt == "AIMBOT LIGERO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text422/refs/heads/main/Text422.lua"))()      
         
         elseif opt == "FLY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Fly/refs/heads/main/Fly.lua"))()
