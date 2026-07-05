@@ -209,7 +209,7 @@ local buttonStates = getgenv().SBS_BUTTON_STATES
 local noToggleButtons = {
     ["YOUTUBE:SBS HUB"] = true,
     ["SUSCRIBETE:)"] = true,
-    ["SEMI-INMUNE"] = true,
+    ["OBTENER TODAS LAS TOOLS"] = true,
     ["LOCALPLAYER"] = true,
     ["RESET STATS"] = true,
     ["DESNC"] = true,
@@ -777,7 +777,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBAT","OBBY","DINERO","FPS"}
+local menuOrder = {"MAIN","ESP","COMBAT","OP","DINERO","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -798,7 +798,7 @@ local menuData = {
         "ESP A BARRY",
     },
     ["OP"] = {
-        "Chat Gratis (Gui)",
+        "OBTENER TODAS LAS TOOLS",
         "BOOST INFINITOS(VAS A OBTENER TODO)",
         "SEMI-INMUNE",
         "REVIVIR",
@@ -933,8 +933,8 @@ if topTitle then
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
                             
-        elseif opt == "ESP A EL EQUIPO (VERDE)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text89/refs/heads/main/Text89.lua"))()
+        elseif opt == "OBTENER TODAS LAS TOOLS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text462/refs/heads/main/Text462.lua"))()
                             
         elseif opt == "AUTO COMPLETAR OBBY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text71/refs/heads/main/Text71.lua"))()
