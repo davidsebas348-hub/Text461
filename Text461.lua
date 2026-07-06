@@ -175,7 +175,7 @@ local buttonTitles = {
     ["AUTO FARMEAR DINERO"] = "FARMEO",
     ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
     
-    ["NOMBRE DE EL JUGADOR"] = "JUGADORES",
+    ["NOMBRE DE EL JUGOR"] = "JUGADORES",
     
 
     [""] = "BUTTONS",
@@ -296,7 +296,7 @@ local textboxButtons = {
     url = nil
     },
 
-    ["VELOCIDAD DE LA DISPARO"] = {
+    ["VELOCIDAD DE EL DISPARO"] = {
     variable = "FoodZookaSettings.BulletSpeed",
     url = nil
     },
@@ -304,7 +304,7 @@ local textboxButtons = {
     variable = "TargetPlayer",
     url = nil
     },
-    ["DAÑO DE LA DISPARO"] = {
+    ["DAÑO DE EL DISPARO"] = {
     variable = "FoodZookaSettings.Damage",
     url = nil
     },
