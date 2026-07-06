@@ -318,6 +318,10 @@ local textboxButtons = {
     variable = "Damage",
     url = nil
     },
+    ["DAÑO POR DEFECTO"] = {
+    variable = "DefaultDamage",
+    url = nil
+    },
     ["DAÑO EN BLOQUEO"] = {
     variable = "BlockDamage",
     url = nil
@@ -858,6 +862,7 @@ local menuData = {
         "ACTIVAR CONFIGURACIÓN",
         "DAÑO",
         "DAÑO EN BLOQUEO",
+        "DAÑO POR DEFECTO",
         "FUERZA",
         "GANANCIA PARA LA ESPECIAL",
         "COOLDOWN DE LA ESPECIAL",
