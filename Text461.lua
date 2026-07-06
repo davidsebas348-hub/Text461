@@ -163,9 +163,10 @@ local BUTTON_CUSTOM = {
 
 -- TITULOS ARRIBA DE BOTONES (titulos simples)
 local buttonTitles = {
-    ["1 = 20"] = "MODIFY TIMER",  
-    ["LAG SERVER (NO LOBBY)"] = "TROLL",
+    ["AUTO DISPARAR (EQUIPAR MINIGUN"] = "ARMA",  
+    ["KILL AURA (EQUIPAR BATON)"] = "BATON",
     ["JUMP(BUTTON)"] = "JUMP PAD",
+    ["EXPANDIR HITBOX"] = "HITBOX",
 
     ["AUTO FARMEAR DINERO"] = "FARMEO",
     ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
@@ -186,7 +187,6 @@ local buttonTitles = {
     [""] = "ENEMIES",
     [""] = "PLAYERS",
 
-    ["HITBOX EXTENDER"] = "HITBOX",
     ["AUTO KILL ENEMIES"] = "KILL",
     ["MULTIPLY DAMAGE"] = "DAMAGE MULTIPLIER",
     ["INFINITY AMMO"] = "MODIFY GUNS",
@@ -764,7 +764,7 @@ end
 local scrollConfig = {
     ["MAIN"] = true,
     ["ESP"] = true,
-    ["CRIMINAL"] = true,
+    ["COMBATE"] = true,
     ["SHERIFF"] = true,
     ["ANTI"] = true,
     ["TELEPORT"] = true,
@@ -777,7 +777,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBAT","OP","DINERO","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","OP","DINERO","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -811,8 +811,9 @@ local menuData = {
         "PLAYER NAME.",
         "FLING PLAYER",
     },
-    ["COMBAT"] = {
-        "KILL AURA",
+    ["COMBATE"] = {
+        "AUTO DISPARAR (EQUIPAR MINIGUN)",
+        "KILL AURA (EQUIPAR BATON)",
         "RANGO",
         "EXPANDIR HITBOX",
         "TAMAÑO",
@@ -927,7 +928,7 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "KILL AURA" then
+        elseif opt == "KILL AURA (EQUIPAR BATON)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text64/refs/heads/main/Text64.lua"))()
             
         elseif opt == "" then
@@ -936,8 +937,8 @@ if topTitle then
         elseif opt == "OBTENER TODAS LAS TOOLS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text462/refs/heads/main/Text462.lua"))()
                             
-        elseif opt == "AUTO COMPLETAR OBBY" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text71/refs/heads/main/Text71.lua"))()
+        elseif opt == "AUTO DISPARAR (EQUIPAR MINIGUN" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text463/refs/heads/main/Text463.lua"))()
                             
         elseif opt == "COMPLETAR OBBY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text72/refs/heads/main/Text72.lua"))()
