@@ -27,7 +27,7 @@ local numericBoxes = {
 }
 -- tener 2 botones en una ocupando espacio de 1 botón 
 local doubleButtons = {
-    ["MAP"] = "LOBBY",
+    ["AUTO SACAR VOLANDO"] = "NOMBRE DE EL JUGADOR",
     ["PLAYER NAME"] = "TP TO PLAYER"
 }
 
@@ -296,12 +296,14 @@ local textboxButtons = {
     variable = "FoodZookaSettings.BulletSpeed",
     url = nil
     },
-
+    ["NOMBRE DE EL JUGADOR"] = {
+    variable = "TargetPlayer",
+    url = nil
+    },
     ["DAÑO DE LA BALA"] = {
     variable = "FoodZookaSettings.Damage",
     url = nil
     },
-
     ["PLAYER NAME."] = {
     variable = "TargetPlayerName",
     url = nil
@@ -797,7 +799,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","OP","DINERO","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","TOOL/OP","TROLL","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -817,9 +819,9 @@ local menuData = {
         "ESP A JUGADORES",
         "ESP A BARRY",
     },
-    ["OP"] = {
+    ["TOOL/OP"] = {
         "OBTENER TODAS LAS TOOLS",
-        "BOOST INFINITOS(VAS A OBTENER TODO)",
+        "",
         "SEMI-INMUNE",
         "REVIVIR",
         "METER AL INSPECTOR (GASTA BOOST)",
@@ -864,12 +866,13 @@ local menuData = {
         "TP A TAREA",
         "AUTO TP A TAREA"
     },
-    ["PROXIMITY PROMPT"] = {
-        "INSTANT PROMPT",
-        "NOCLIP PROMPT",
-        "AUMENTAR EL RANGO DEL PROMPT A 20",
-        "ACTIVAR PROMPT (Click)",
-        "TODOS LOS PROMPT ACTIVOS"
+    ["TROLL"] = {
+        "AUTO SACAR VOLANDO A TODOS",
+        "AUTO SACAR VOLANDO",
+        "NOMBRE DE EL JUGADOR",
+        "AUTO MATAR A TODOS",
+        "MATAR"
+        "NOMBRE DE EL JUGADOR.
     },
     ["FPS"] = {
         "Fps Boost"
@@ -968,11 +971,11 @@ if topTitle then
         elseif opt == "ACTIVAR MODIFICACION PARA EL BAZOOKA" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text464/refs/heads/main/Text464.lua"))()
 
-        elseif opt == "CONGELAR A LOS CRIMINALES (CLIENT)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text81/refs/heads/main/Text81.lua"))()
+        elseif opt == "AUTO SACAR VOLANDO A TODOS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text465/refs/heads/main/Text465.lua"))()
                             
-        elseif opt == "AUTO DISPARAR A CRIMINALES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text79/refs/heads/main/Text79.lua"))()
+        elseif opt == "AUTO SACAR VOLANDO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text466/refs/heads/main/Text466.lua"))()
                             
         elseif opt == "EXPANDIR HITBOX" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text368/refs/heads/main/Text368.lua"))()
