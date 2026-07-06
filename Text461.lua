@@ -315,27 +315,27 @@ local textboxButtons = {
     url = nil
     },
     ["DAÑO"] = {
-    variable = "WeaponSettings.Damage",
+    variable = "Damage",
     url = nil
     },
     ["DAÑO EN BLOQUEO"] = {
-    variable = "WeaponSettings.BlockDamage",
+    variable = "BlockDamage",
     url = nil
     },
     ["FUERZA"] = {
-    variable = "WeaponSettings.Force",
+    variable = "Force",
     url = nil
     },
     ["CHANCE DE LA PASIVA"] = {
-    variable = "WeaponSettings.PassiveChance",
+    variable = "PassiveChance",
     url = nil
     },
     ["GANANCIA PARA LA ESPECIAL"] = {
-    variable = "WeaponSettings.SpecialBuildup",
+    variable = "SpecialBuildup",
     url = nil
     },
     ["COOLDOWN DE LA ESPECIAL"] = {
-    variable = "WeaponSettings.SpecialColdown",
+    variable = "SpecialCooldown",
     url = nil
     },
     ["PLAYER NAME."] = {
@@ -821,7 +821,7 @@ local scrollConfig = {
     ["MAIN"] = true,
     ["ESP"] = true,
     ["COMBATE"] = true,
-    ["SHERIFF"] = true,
+    ["TOOL/OP"] = true,
     ["ANTI"] = true,
     ["TELEPORT"] = true,
     ["PROXIMITY PROMPT"] = true,
