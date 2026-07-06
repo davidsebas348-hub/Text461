@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text467/refs/heads/main/Text467.lua"))()
+-- modoficaciones para tool 
 -- ======================
 -- SBS HUB COMPLETO FINAL  (NPC OR DIE)
 -- ======================
@@ -855,7 +857,6 @@ local menuData = {
     },
     ["TOOL/OP"] = {
         "OBTENER TODAS LAS TOOLS",
-        "ACTIVAR CONFIGURACIÓN",
         "DAÑO",
         "DAÑO EN BLOQUEO",
         "FUERZA",
