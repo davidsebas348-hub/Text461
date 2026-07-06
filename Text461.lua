@@ -282,6 +282,26 @@ local textboxButtons = {
     variable = "TrapDelay",
     url = nil
     },
+    ["TIEMPO DE RECARGA"] = {
+    variable = "FoodZookaSettings.ReloadTime",
+    url = nil
+    },
+
+    ["FUERZA DE LA BALA"] = {
+    variable = "FoodZookaSettings.Force",
+    url = nil
+    },
+
+    ["VELOCIDAD DE LA BALA"] = {
+    variable = "FoodZookaSettings.BulletSpeed",
+    url = nil
+    },
+
+    ["DAÑO DE LA BALA"] = {
+    variable = "FoodZookaSettings.Damage",
+    url = nil
+    },
+
     ["PLAYER NAME."] = {
     variable = "TargetPlayerName",
     url = nil
@@ -813,6 +833,11 @@ local menuData = {
     },
     ["COMBATE"] = {
         "AUTO DISPARAR (EQUIPAR MINIGUN)",
+        "ACTIVAR MODIFICACION PARA EL BAZOOKA",
+        "VELOCIDAD DE EL DISPARO",
+        "DAÑO DE EL DISPARO",
+        "FUERZA DE EL DISPARO",
+        "TIEMPO DE RECARGA",
         "KILL AURA (EQUIPAR BATON)",
         "RANGO",
         "EXPANDIR HITBOX",
@@ -937,11 +962,11 @@ if topTitle then
         elseif opt == "OBTENER TODAS LAS TOOLS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text462/refs/heads/main/Text462.lua"))()
                             
-        elseif opt == "AUTO DISPARAR (EQUIPAR MINIGUN" then
+        elseif opt == "AUTO DISPARAR (EQUIPAR MINIGUN)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text463/refs/heads/main/Text463.lua"))()
                             
-        elseif opt == "COMPLETAR OBBY" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text72/refs/heads/main/Text72.lua"))()
+        elseif opt == "ACTIVAR MODIFICACION PARA EL BAZOOKA" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text464/refs/heads/main/Text464.lua"))()
 
         elseif opt == "CONGELAR A LOS CRIMINALES (CLIENT)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text81/refs/heads/main/Text81.lua"))()
