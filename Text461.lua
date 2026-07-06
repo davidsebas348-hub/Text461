@@ -27,6 +27,12 @@ local numericBoxes = {
     ["VELOCIDAD DE EL DISPARO"] = true,
     ["DAÑO DE EL DISPARO"] = true,
     ["FUERZA DE EL DISPARO"] = true,
+    ["DAÑO"] = true,
+    ["DAÑO EN BLOQUEO"] = true,
+    ["FUERZA"] = true,
+    ["GANANCIA PARA LA ESPECIAL"] = true,
+    ["COOLDOWN DE LA ESPECIAL"] = true,
+    ["CHANCE DE LA PASIVA"] = true,
     
 }
 -- tener 2 botones en una ocupando espacio de 1 botón 
@@ -306,6 +312,30 @@ local textboxButtons = {
     },
     ["DAÑO DE EL DISPARO"] = {
     variable = "FoodZookaSettings.Damage",
+    url = nil
+    },
+    ["DAÑO"] = {
+    variable = "WeaponSettings.Damage",
+    url = nil
+    },
+    ["DAÑO EN BLOQUEO"] = {
+    variable = "WeaponSettings.BlockDamage",
+    url = nil
+    },
+    ["FUERZA"] = {
+    variable = "WeaponSettings.Force",
+    url = nil
+    },
+    ["CHANCE DE LA PASIVA"] = {
+    variable = "WeaponSettings.PassiveChance",
+    url = nil
+    },
+    ["GANANCIA PARA LA ESPECIAL"] = {
+    variable = "WeaponSettings.SpecialBuildup",
+    url = nil
+    },
+    ["COOLDOWN DE LA ESPECIAL"] = {
+    variable = "WeaponSettings.SpecialColdown",
     url = nil
     },
     ["PLAYER NAME."] = {
@@ -825,11 +855,13 @@ local menuData = {
     },
     ["TOOL/OP"] = {
         "OBTENER TODAS LAS TOOLS",
-        "",
-        "SEMI-INMUNE",
-        "REVIVIR",
-        "METER AL INSPECTOR (GASTA BOOST)",
-        "+110% DE GANANCIA",
+        "ACTIVAR CONFIGURACIÓN",
+        "DAÑO",
+        "DAÑO EN BLOQUEO",
+        "FUERZA",
+        "GANANCIA PARA LA ESPECIAL",
+        "COOLDOWN DE LA ESPECIAL",
+        "CHANCE DE LA PASIVA",
     },
     ["LOBBY"] = {
         "TOUCH FLING",
@@ -984,8 +1016,8 @@ if topTitle then
         elseif opt == "EXPANDIR HITBOX" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text368/refs/heads/main/Text368.lua"))()
 
-        elseif opt == "ATURDIR A LOS SHERIFFS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text82/refs/heads/main/Text82.lua"))()
+        elseif opt == "ACTIVAR CONFIGURACIÓN" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text467/refs/heads/main/Text467.lua"))()
                             
         elseif opt == "RESISTENCIA INFINITA" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text76/refs/heads/main/Text76.lua"))()
