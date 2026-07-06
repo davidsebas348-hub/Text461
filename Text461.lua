@@ -864,15 +864,15 @@ local menuData = {
     ["CRIMINAL"] = {
         "ATURDIR A LOS SHERIFFS",
         "TP A TAREA",
-        "AUTO TP A TAREA"
+        "AUTO TP A TAREA",
     },
     ["TROLL"] = {
         "AUTO SACAR VOLANDO A TODOS",
         "AUTO SACAR VOLANDO",
         "NOMBRE DE EL JUGADOR",
         "AUTO MATAR A TODOS",
-        "MATAR"
-        "NOMBRE DE EL JUGADOR.
+        "MATAR",
+        "NOMBRE DE EL JUGADOR.",
     },
     ["FPS"] = {
         "Fps Boost"
