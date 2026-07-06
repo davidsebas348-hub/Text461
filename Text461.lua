@@ -24,10 +24,14 @@ local numericBoxes = {
     ["FOV SIZE"] = true,
     ["BULLET SIZE"] = true,
     ["1 = 20"] = true,
+    ["VELOCIDAD DE EL DISPARO"] = true,
+    ["DAÑO DE EL DISPARO"] = true,
+    ["FUERZA DE EL DISPARO"] = true,
+    
 }
 -- tener 2 botones en una ocupando espacio de 1 botón 
 local doubleButtons = {
-    ["AUTO SACAR VOLANDO"] = "NOMBRE DE EL JUGADOR",
+    ["AUTO ACAR VOLANDO"] = "NOMBRE DE EL JUGADO",
     ["PLAYER NAME"] = "TP TO PLAYER"
 }
 
@@ -59,7 +63,7 @@ local menuNames = {
 -- ======================
 
 local multiButtons = {
-    ["MODE: NORMAL"] = {
+    [""] = {
         options = {
             {
                 name = "MODE: BLE",
@@ -130,7 +134,7 @@ local BUTTON_CUSTOM = {
         y = -6
     },
 
-    ["SIZ"] = {
+    ["NOMBRE DE EL JUGADOR"] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -6
@@ -287,12 +291,12 @@ local textboxButtons = {
     url = nil
     },
 
-    ["FUERZA DE LA BALA"] = {
+    ["FUERZA DE LA DISPARO"] = {
     variable = "FoodZookaSettings.Force",
     url = nil
     },
 
-    ["VELOCIDAD DE LA BALA"] = {
+    ["VELOCIDAD DE LA DISPARO"] = {
     variable = "FoodZookaSettings.BulletSpeed",
     url = nil
     },
@@ -300,7 +304,7 @@ local textboxButtons = {
     variable = "TargetPlayer",
     url = nil
     },
-    ["DAÑO DE LA BALA"] = {
+    ["DAÑO DE LA DISPARO"] = {
     variable = "FoodZookaSettings.Damage",
     url = nil
     },
