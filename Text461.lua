@@ -311,6 +311,10 @@ local textboxButtons = {
     variable = "TargetPlayer",
     url = nil
     },
+    ["NOMBRE DE EL JUGADOR"] = {
+    variable = "Player",
+    url = nil
+    },
     ["NOMBRE DE EL JUGADOR_"] = {
     variable = "TargetPlayer2",
     url = nil
@@ -1039,8 +1043,8 @@ if topTitle then
         elseif opt == "AUTO MATAR" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text469/refs/heads/main/Text469.lua"))()
                             
-        elseif opt == "AUTO RECOLECTAR DINERO (LENTO)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text364/refs/heads/main/Text364.lua"))()
+        elseif opt == "LAG SERVER (EQUIPAR BOMBA)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text470/refs/heads/main/Text470.lua"))()
 
         elseif opt == "AUTO FARMEAR DINERO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text73/main/Text73.lua"))()
