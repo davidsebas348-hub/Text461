@@ -340,7 +340,15 @@ local textboxButtons = {
     url = nil
     },
     ["CHANCE DE LA PASIVA"] = {
-    variable = "PassiveChance",
+    variable = "PassivaChance",
+    url = nil
+    },
+    ["TIEMPO DE RECARGA"] = {
+    variable = "ReloadTime",
+    url = nil
+    },
+    ["VELOCIDAD DEL PROYECTIL"] = {
+    variable = "BulletSpeed",
     url = nil
     },
     ["GANANCIA PARA LA ESPECIAL"] = {
@@ -876,6 +884,8 @@ local menuData = {
         "GANANCIA PARA LA ESPECIAL",
         "COOLDOWN DE LA ESPECIAL",
         "CHANCE DE LA PASIVA",
+        "VELOCIDAD DEL PROYECTIL",
+        "TIEMPO DE RECARGA",
     },
     ["LOBBY"] = {
         "TOUCH FLING",
