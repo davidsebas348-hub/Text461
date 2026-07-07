@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","TOOL/OP","TROLL","TELEPORT/STAGES","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","TOOL/OP","TROLL","TELEPORT/ETAPA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
