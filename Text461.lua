@@ -44,7 +44,7 @@ local doubleButtons = {
 -- poner título arriba de tal botón 
 local topTitles = {
     ["ACTIVAR MODFICACIÓN"] = "MODIFICAR TOOLS",
-    ["AUTO BLACK FLASH (Gojo)"] = "BLACK FLASH",
+    ["TP TOOL"] = "TELEPORT",
     ["AUTO GANAR EN LA HABILIDAD Juicio Final"] = "GANAR",
     ["SPEED"] = "PLAYER",
 }
@@ -61,7 +61,7 @@ local menuNames = {
     ["MAI"] = "PLAYER MENU",
     ["COMBAT"] = "FIGHT SYSTEM",
     ["AUTO"] = "M1",
-    ["TELEPORT"] = "TELEPORTS",
+    ["TELEPORT/ETAPA"] = "ETAPA",
 }
 
 -- ======================
@@ -227,8 +227,8 @@ local noToggleButtons = {
     ["Fps Boost"] = true,
     ["REVIVIR"] = true,
     ["AUTO FARMEAR DINERO"] = true,
-    ["METER AL INSPECTOR (GASTA BOOST)"] = true,
-    ["Chat Gratis (Gui)"] = true,
+    ["ESTAR EN LA ETAPA 99.900M"] = true,
+    [""] = true,
     ["GET THE TOOL SPORTS DRINK"] = true,
     ["GET THE TOOL TRAP"] = true,
     ["CONGELAR A LOS CRIMINALES (CLIENT)"] = true,  
@@ -271,6 +271,11 @@ local textboxButtons = {
     ["GRAVITY"] = {
         variable = "GRAVITY",
         url = "https://raw.githubusercontent.com/davidsebas348-hub/Gravity/refs/heads/main/Gravity.lua"
+    },
+
+    ["ESCRIBE LA ETAPA QUE QUIERAS IR"] = {
+        variable = "StageNumber",
+        url = "https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"
     },
 
     ["FLY SPEED"] = {
@@ -906,7 +911,9 @@ local menuData = {
         "TAMAÑO",
         "TRANSPARENCIA 0-1",
     },
-    ["TELEPORT/STAGES"] = {
+    ["TELEPORT/ETAPA"] = {
+        "ESCRIBE LA ETAPA QUE QUIERAS IR",
+        "ESTAR EN LA ETAPA 99.900M",
         "TP TOOL",
         "TP ADENTRO DE LA TIENDA",
         "NOMBRE DE EL JUGADOR",
@@ -1056,8 +1063,9 @@ if topTitle then
         elseif opt == "LAG SERVER (EQUIPAR BOMBA)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text470/refs/heads/main/Text470.lua"))()
 
-        elseif opt == "AUTO FARMEAR DINERO" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text73/main/Text73.lua"))()
+        elseif opt == "ESTAR EN LA ETAPA 99.900M" then
+            getgenv().StageNumber = 99999000000 
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
                             
         elseif opt == "Chat Gratis (gui)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text300/refs/heads/main/Text300.lua"))()
