@@ -228,9 +228,9 @@ local noToggleButtons = {
     ["REVIVIR"] = true,
     ["AUTO FARMEAR DINERO"] = true,
     ["ESTAR EN LA ETAPA 99.900M"] = true,
-    [""] = true,
-    ["GET THE TOOL SPORTS DRINK"] = true,
-    ["GET THE TOOL TRAP"] = true,
+    ["COMPLETAR OBBY"] = true,
+    ["SER GUARDIA"] = true,
+    ["SER PRISIONERO"] = true,
     ["CONGELAR A LOS CRIMINALES (CLIENT)"] = true,  
     ["GET THE TOOL SPAWN DECOY"] = true,
     ["TP ADENTRO DE LA TIENDA"] = true,
@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -923,10 +923,11 @@ local menuData = {
         "PARAR EL TIEMPO",
         "COMPLETAR OBBY",
     },
-    ["DINERO"] = {
-        "AUTO RECOLECTAR DINERO (RAPIDO)",
-        "AUTO RECOLECTAR DINERO (LENTO)",
-        "AUTO FARMEAR DINERO",
+    ["GUARDIA"] = {
+        "AUTO ARRESTAR",
+        "TENER EL MENU DE TELEPORTACIONES",
+        "SER GUARDIA",
+        "SER PRISIONERO",
     },
     ["CRIMINAL"] = {
         "ATURDIR A LOS SHERIFFS",
@@ -1073,14 +1074,16 @@ if topTitle then
         elseif opt == "PARAR EL TIEMPO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text471/refs/heads/main/Text471.lua"))()
 
-        elseif opt == "INVISIBLE POR 7 SEGUNDOS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text366/refs/heads/main/Text366.lua"))()
+        elseif opt == "SER GUARDIA" then
+            getgenv().StageNumber = 25
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
                             
         elseif opt == "" then
             loadstring("getgenv().OnlyVisible = not getgenv().OnlyVisible")()
                             
-        elseif opt == "AUTO DAR SHAWARMA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text273/refs/heads/main/Text273.lua"))()
+        elseif opt == "SER PRISIONERO" then
+            getgenv().StageNumber = 1
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
 
         elseif opt == "HACER SHAWARMA" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text284/refs/heads/main/Text284.lua"))()
