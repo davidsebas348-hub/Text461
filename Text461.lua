@@ -915,7 +915,8 @@ local menuData = {
         "ESCRIBE LA ETAPA QUE QUIERAS IR",
         "ESTAR EN LA ETAPA 99.900M",
         "TP TOOL",
-        "TP ADENTRO DE LA TIENDA",
+        "TP A DIAMANTE",
+        "TP A DIAMANTE ROJO",
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
     },
@@ -925,7 +926,6 @@ local menuData = {
     },
     ["GUARDIA"] = {
         "AUTO ARRESTAR",
-        "TENER EL MENU DE TELEPORTACIONES",
         "SER GUARDIA",
         "SER PRISIONERO",
     },
@@ -1083,6 +1083,7 @@ if topTitle then
                             
         elseif opt == "SER PRISIONERO" then
             getgenv().StageNumber = 1
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset_Player/refs/heads/main/Reset.lua"))()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
 
         elseif opt == "HACER SHAWARMA" then
