@@ -859,13 +859,11 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","EXTRA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
     "DESYINC",
-    "RESISTENCIA INFINITA",
-    "QUITAR LAS PAREDES INVISIBLES",
     "SPEED",
     "JUMPPOWER",  
     "GRAVITY",
@@ -945,6 +943,10 @@ local menuData = {
     },
     ["FPS"] = {
         "Fps Boost"
+    },
+    ["EXTRA"] = {
+        "COCINAR GENTE (BOTON)",
+        "SER MÚSCULOS",
     },
     ["YOUTUBE"] = {
         "YOUTUBE:SBS HUB",
@@ -1086,11 +1088,11 @@ if topTitle then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset_Player/refs/heads/main/Reset.lua"))()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
 
-        elseif opt == "HACER SHAWARMA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text284/refs/heads/main/Text284.lua"))()
+        elseif opt == "ESP A JUGADORES" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text473/refs/heads/main/Text473.lua"))()
                             
-        elseif opt == "NOCLIP PROMPT" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text269/refs/heads/main/Text269.lua"))()
+        elseif opt == "ESP A BARRY" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text474/refs/heads/main/Text474.lua"))()
                             
         elseif opt == "AUTO HACER SHAWARMA" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text285/refs/heads/main/Text285.lua"))()
