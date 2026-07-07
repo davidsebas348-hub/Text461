@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","TOOL/OP","TROLL","TELEPORT/ETAPA","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -919,8 +919,8 @@ local menuData = {
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
     },
-    ["OBBY"] = {
-        "AUTO COMPLETAR OBBY",
+    ["GANAR/SPEEDRUN"] = {
+        "PARAR EL TIEMPO",
         "COMPLETAR OBBY",
     },
     ["DINERO"] = {
@@ -1067,11 +1067,11 @@ if topTitle then
             getgenv().StageNumber = 99999000000 
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
                             
-        elseif opt == "Chat Gratis (gui)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text300/refs/heads/main/Text300.lua"))()
+        elseif opt == "GANAR" then
+            loadstring(game:HttpGet(""))()
                             
-        elseif opt == "AUTO TP A TAREA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text80/refs/heads/main/Text80.lua"))()
+        elseif opt == "PARAR EL TIEMPO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text471/refs/heads/main/Text471.lua"))()
 
         elseif opt == "INVISIBLE POR 7 SEGUNDOS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text366/refs/heads/main/Text366.lua"))()
