@@ -1067,8 +1067,8 @@ if topTitle then
             getgenv().StageNumber = 99999000000 
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
                             
-        elseif opt == "GANAR" then
-            loadstring(game:HttpGet(""))()
+        elseif opt == "COMPLETAR OBBY" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text472/refs/heads/main/Text472.lua"))()
                             
         elseif opt == "PARAR EL TIEMPO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text471/refs/heads/main/Text471.lua"))()
