@@ -140,7 +140,7 @@ local BUTTON_CUSTOM = {
         y = -6
     },
 
-    ["NOMBRE DE EL JUGADOR"] = {
+    ["NOMBRE DE EL JUGAD"] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -6
@@ -178,7 +178,7 @@ local buttonTitles = {
     ["JUMP(BUTTON)"] = "JUMP PAD",
     ["EXPANDIR HITBOX"] = "HITBOX",
 
-    ["ACTIVAR MODIFICACIÓN"] = "CONFIGURAR TOOLS",
+    ["ACTIVAR CONFIGURACIÓN"] = "CONFIGURAR TOOLS",
     ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
     
     ["NOMBRE DE EL JUGOR"] = "JUGADORES",
@@ -832,8 +832,8 @@ local scrollConfig = {
     ["COMBATE"] = true,
     ["TOOL/OP"] = true,
     ["ANTI"] = true,
-    ["TELEPORT"] = true,
-    ["PROXIMITY PROMPT"] = true,
+    ["TELEPORT/STAGES"] = true,
+    ["TROLL"] = true,
     ["LOBBY"] = true,
     ["AUTO FARM"] = true,
     ["Fps"] = false,
@@ -842,7 +842,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","TOOL/OP","TROLL","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","TOOL/OP","TROLL","TELEPORT/STAGES","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -892,7 +892,7 @@ local menuData = {
         "TAMAÑO",
         "TRANSPARENCIA 0-1",
     },
-    ["TELEPORT"] = {
+    ["TELEPORT/STAGES"] = {
         "TP TOOL",
         "TP ADENTRO DE LA TIENDA",
         "NOMBRE DE EL JUGADOR",
