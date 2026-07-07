@@ -43,7 +43,7 @@ local doubleButtons = {
 
 -- poner título arriba de tal botón 
 local topTitles = {
-    ["AUTO SPECIAL/VARIANTE (BUG)"] = "Gojo",
+    ["ACTIVAR MODFICACIÓN"] = "MODIFICAR TOOLS",
     ["AUTO BLACK FLASH (Gojo)"] = "BLACK FLASH",
     ["AUTO GANAR EN LA HABILIDAD Juicio Final"] = "GANAR",
     ["SPEED"] = "PLAYER",
@@ -178,16 +178,17 @@ local buttonTitles = {
     ["JUMP(BUTTON)"] = "JUMP PAD",
     ["EXPANDIR HITBOX"] = "HITBOX",
 
-    ["AUTO FARMEAR DINERO"] = "FARMEO",
+    ["ACTIVAR MODIFICACIÓN"] = "CONFIGURAR TOOLS",
     ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
     
     ["NOMBRE DE EL JUGOR"] = "JUGADORES",
     
 
-    [""] = "BUTTONS",
-    [""] = "TROLL", 
+    ["AUTO SACAR VOLANDO A TODOS"] = "FLING",
+    ["AUTO MATAR A TODOS"] = "KILL", 
+    ["LAG SERVER (EQUIPAR BOMBA)"] = "SERVER",
     
-    ["PLAYER NAME."] = "FLING",
+    ["PLAYER NA"] = "FLING",
     ["TOUCH FLING"] = "TOUCH",
     ["ESP ENEMIES"] = "ENEMIES",
     ["ESP PLAYERS + NAME + DISTANCE"] = "PLAYERS",
@@ -297,7 +298,7 @@ local textboxButtons = {
     url = nil
     },
 
-    ["FUERZA DE LA DISPARO"] = {
+    ["FUERZA DE EL DISPARO"] = {
     variable = "FoodZookaSettings.Force",
     url = nil
     },
@@ -308,6 +309,10 @@ local textboxButtons = {
     },
     ["NOMBRE DE EL JUGADOR"] = {
     variable = "TargetPlayer",
+    url = nil
+    },
+    ["NOMBRE DE EL JUGADOR_"] = {
+    variable = "TargetPlayer2",
     url = nil
     },
     ["DAÑO DE EL DISPARO"] = {
@@ -908,12 +913,13 @@ local menuData = {
         "AUTO TP A TAREA",
     },
     ["TROLL"] = {
+        "LAG SERVER (EQUIPAR BOMBA)",
         "AUTO SACAR VOLANDO A TODOS",
         "AUTO SACAR VOLANDO",
         "NOMBRE DE EL JUGADOR",
         "AUTO MATAR A TODOS",
-        "MATAR",
-        "NOMBRE DE EL JUGADOR.",
+        "AUTO MATAR",
+        "NOMBRE DE EL JUGADOR_",
     },
     ["FPS"] = {
         "Fps Boost"
@@ -1024,14 +1030,14 @@ if topTitle then
         elseif opt == "ACTIVAR CONFIGURACIÓN" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text467/refs/heads/main/Text467.lua"))()
                             
-        elseif opt == "RESISTENCIA INFINITA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text76/refs/heads/main/Text76.lua"))()
+        elseif opt == "AUTO MATAR A TODOS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text468/refs/heads/main/Text468.lua"))()
                             
         elseif opt == "DESYNC" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text428/refs/heads/main/Text428.lua"))()
 
-        elseif opt == "AUTO RECOLECTAR DINERO (RAPIDO)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text363/refs/heads/main/Text363.lua"))()
+        elseif opt == "AUTO MATAR" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text469/refs/heads/main/Text469.lua"))()
                             
         elseif opt == "AUTO RECOLECTAR DINERO (LENTO)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text364/refs/heads/main/Text364.lua"))()
