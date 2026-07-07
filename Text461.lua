@@ -233,7 +233,7 @@ local noToggleButtons = {
     ["SER PRISIONERO"] = true,
     ["PARAR EL TIEMPO"] = true,  
     ["GET THE TOOL SPAWN DECOY"] = true,
-    ["TP ADENTRO DE LA TIENDA"] = true,
+    ["OBTENER SHIFTLOCK"] = true,
     ["TP A JUGADOR"] = true,
     ["SER FUERTE"] = true,
     ["COMPLETAR OBBY"] = true,
@@ -859,11 +859,13 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","EXTRA","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN/COIN","TOOL/OP","TROLL","TELEPORT/ETAPA","EXTRA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
     "DESYINC",
+    "SEMI-INMUNE",
+    "OBTENER SHIFTLOCK",
     "SPEED",
     "JUMPPOWER",  
     "GRAVITY",
@@ -918,9 +920,10 @@ local menuData = {
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
     },
-    ["GANAR/SPEEDRUN"] = {
+    ["GANAR/SPEEDRUN/COIN"] = {
         "PARAR EL TIEMPO",
         "COMPLETAR OBBY",
+        "OBTENER MONEDAS INFINITAS",
     },
     ["GUARDIA"] = {
         "AUTO ARRESTAR",
@@ -1103,8 +1106,8 @@ if topTitle then
         elseif opt == "COCINAR GENTE (BOTON)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text476/refs/heads/main/Text476.lua"))()
               
-        elseif opt == "SPEED BOOST" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text341/refs/heads/main/Text341.lua"))()
+        elseif opt == "OBTENER SHIFTLOCK" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Shift-lock/refs/heads/main/Shift_Lock_.lua"))()
                             
         elseif opt == "FLING PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text156/refs/heads/main/Text156.lua"))()
