@@ -231,13 +231,13 @@ local noToggleButtons = {
     ["COMPLETAR OBBY"] = true,
     ["SER GUARDIA"] = true,
     ["SER PRISIONERO"] = true,
-    ["CONGELAR A LOS CRIMINALES (CLIENT)"] = true,  
+    ["PARAR EL TIEMPO"] = true,  
     ["GET THE TOOL SPAWN DECOY"] = true,
     ["TP ADENTRO DE LA TIENDA"] = true,
     ["TP A JUGADOR"] = true,
-    ["BOOST INFINITOS(VAS A OBTENER TODO)"] = true,
+    ["SER FUERTE"] = true,
     ["COMPLETAR OBBY"] = true,
-    ["QUITAR LAS PAREDES INVISIBLES"] = true,  
+    ["COCINAR GENTE (BOTON)"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
 }
@@ -946,7 +946,7 @@ local menuData = {
     },
     ["EXTRA"] = {
         "COCINAR GENTE (BOTON)",
-        "SER MÚSCULOS",
+        "SER FUERTE",
     },
     ["YOUTUBE"] = {
         "YOUTUBE:SBS HUB",
@@ -1094,14 +1094,14 @@ if topTitle then
         elseif opt == "ESP A BARRY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text474/refs/heads/main/Text474.lua"))()
                             
-        elseif opt == "AUTO HACER SHAWARMA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text285/refs/heads/main/Text285.lua"))()
+        elseif opt == "AUTO ARRESTAR" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text56/refs/heads/main/Text56.lua"))()
 
-        elseif opt == "DAR SHAWARMA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text274/refs/heads/main/Text274.lua"))()
+        elseif opt == "SER FUERTE" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text475/refs/heads/main/Text475.lua"))()
                             
-        elseif opt == "EXTEND BREAK" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text339/refs/heads/main/Text339.lua"))()
+        elseif opt == "COCINAR GENTE (BOTON)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text476/refs/heads/main/Text476.lua"))()
               
         elseif opt == "SPEED BOOST" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text341/refs/heads/main/Text341.lua"))()
