@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN/COIN","TOOL/OP","TROLL","TELEPORT/ETAPA","EXTRA","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","COIN","EXTRA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -920,7 +920,7 @@ local menuData = {
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
     },
-    ["GANAR/SPEEDRUN/COIN"] = {
+    ["GANAR/SPEEDRUN"] = {
         "PARAR EL TIEMPO",
         "COMPLETAR OBBY",
         "OBTENER MONEDAS INFINITAS",
@@ -946,6 +946,9 @@ local menuData = {
     },
     ["FPS"] = {
         "Fps Boost"
+    },
+    ["COIN"] = {
+        "OBTENER MONEDAS (salirse para desactivar)"
     },
     ["EXTRA"] = {
         "COCINAR GENTE (BOTON)",
