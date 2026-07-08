@@ -863,7 +863,7 @@ local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
-    "DESYINC",
+    "DESYNC",
     "OBTENER SHIFTLOCK",
     "SPEED",
     "JUMPPOWER",  
@@ -922,7 +922,6 @@ local menuData = {
     ["GANAR/SPEEDRUN"] = {
         "PARAR EL TIEMPO",
         "COMPLETAR OBBY",
-        "OBTENER MONEDAS INFINITAS",
     },
     ["GUARDIA"] = {
         "AUTO ARRESTAR",
@@ -1119,8 +1118,8 @@ if topTitle then
         elseif opt == "QUITAR LAS PAREDES INVISIBLES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text365/refs/heads/main/Text365.lua"))()
                             
-        elseif opt == "AIMBOT RAPIDO" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text423/refs/heads/main/Text423.lua"))()
+        elseif opt == "OBTENER MONEDAS (salirse para desactivar)" then
+            loadstring(game:HttpGet("https://github.com/davidsebas348-hub/Text477/blob/main/Text477.lua"))()
                             
         elseif opt == "AIMBOT TOTAL" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text93/refs/heads/main/Text93.lua"))()
