@@ -481,7 +481,7 @@ end
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1,0,0,50)
 title.BackgroundColor3 = Color3.fromRGB(0,0,0)
-title.Text = "SBS HUB | Npc or Die"
+title.Text = "SBS HUB | BARRY'S PRISON RUN"
 title.TextColor3 = Color3.fromRGB(255,255,255)
 title.Font = Enum.Font.GothamBold
 title.TextScaled = true
@@ -864,7 +864,6 @@ local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
     "DESYINC",
-    "SEMI-INMUNE",
     "OBTENER SHIFTLOCK",
     "SPEED",
     "JUMPPOWER",  
@@ -1085,6 +1084,8 @@ if topTitle then
         elseif opt == "SER GUARDIA" then
             getgenv().StageNumber = 25
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text67/refs/heads/main/Text67.lua"))()
+                            
                             
         elseif opt == "" then
             loadstring("getgenv().OnlyVisible = not getgenv().OnlyVisible")()
@@ -1154,14 +1155,14 @@ if topTitle then
         elseif opt == "Fps Boost" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Fps-Boost-/refs/heads/main/FPS_BOOST_UNIVERSAL.lua"))()
 
-        elseif opt == "" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/NOCLIP/refs/heads/main/NOCLIP.lua"))()
+        elseif opt == "INVISIBLE" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text427/refs/heads/main/Text427.lua"))()
 
         elseif opt == "TOUCH FLING" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text281/refs/heads/main/Text281.lua"))()
 
-        elseif opt == "REVIVE TEAM (GUI)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Revive-gui/refs/heads/main/Op_gui.lua"))()
+        elseif opt == "DESYNC" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text428/refs/heads/main/Text428.lua"))()
 
         elseif opt == "YOUTUBE:SBS HUB" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Copiar-canal/refs/heads/main/Suscribete.lua"))()
