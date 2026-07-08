@@ -914,8 +914,6 @@ local menuData = {
         "ESCRIBE LA ETAPA QUE QUIERAS IR",
         "ESTAR EN LA ETAPA 99.900M",
         "TP TOOL",
-        "TP A DIAMANTE",
-        "TP A DIAMANTE ROJO",
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
     },
@@ -1119,7 +1117,7 @@ if topTitle then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text365/refs/heads/main/Text365.lua"))()
                             
         elseif opt == "OBTENER MONEDAS (salirse para desactivar)" then
-            loadstring(game:HttpGet("https://github.com/davidsebas348-hub/Text477/blob/main/Text477.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text477/refs/heads/main/Text477.lua"))()
                             
         elseif opt == "AIMBOT TOTAL" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text93/refs/heads/main/Text93.lua"))()
