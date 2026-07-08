@@ -899,11 +899,6 @@ local menuData = {
     },
     ["COMBATE"] = {
         "AUTO DISPARAR (EQUIPAR MINIGUN)",
-        "ACTIVAR MODIFICACION PARA EL BAZOOKA",
-        "VELOCIDAD DE EL DISPARO",
-        "DAÑO DE EL DISPARO",
-        "FUERZA DE EL DISPARO",
-        "TIEMPO DE RECARGA",
         "KILL AURA (EQUIPAR BATON)",
         "RANGO",
         "EXPANDIR HITBOX",
@@ -1073,13 +1068,13 @@ if topTitle then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
                             
         elseif opt == "COMPLETAR OBBY" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text472/refs/heads/main/Text472.lua"))()
+            loadstring(game:HttpGet("https://github.com/davidsebas348-hub/Text479/blob/main/Text479.lua"))()
                             
         elseif opt == "PARAR EL TIEMPO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text471/refs/heads/main/Text471.lua"))()
 
         elseif opt == "SER GUARDIA" then
-            getgenv().StageNumber = 25
+            getgenv().StageNumber = 21
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text66/refs/heads/main/Text66.lua"))()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text67/refs/heads/main/Text67.lua"))()
                             
