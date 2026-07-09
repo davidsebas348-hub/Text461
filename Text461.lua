@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","COMBATE","GUARDIA","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","COIN","EXTRA","FPS"}
+local menuOrder = {"MAIN","ESP","OP","AUTO","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","COIN","EXTRA","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -876,20 +876,13 @@ local menuData = {
     },
     ["ESP"] = {
         "ESP A JUGADORES",
-        "ESP A BARRY",
     },
-    ["TOOL/OP"] = {
-        "OBTENER TODAS LAS TOOLS",
-        "ACTIVAR CONFIGURACIÓN",
-        "DAÑO",
+    ["AUTO"] = {
+        "AUTO GANAR VELOCIDAD",
+        "AUTO GANAR VICTORIA",
+        "AUTO RENACER",
         "DAÑO EN BLOQUEO",
         "DAÑO POR DEFECTO",
-        "FUERZA",
-        "GANANCIA PARA LA ESPECIAL",
-        "COOLDOWN DE LA ESPECIAL",
-        "CHANCE DE LA PASIVA",
-        "VELOCIDAD DEL PROYECTIL",
-        "TIEMPO DE RECARGA",
     },
     ["LOBBY"] = {
         "TOUCH FLING",
@@ -897,8 +890,8 @@ local menuData = {
         "PLAYER NAME.",
         "FLING PLAYER",
     },
-    ["COMBATE"] = {
-        "AUTO DISPARAR (EQUIPAR MINIGUN)",
+    ["OP"] = {
+        "SALTOS INFINITOA",
         "KILL AURA (EQUIPAR BATON)",
         "RANGO",
         "EXPANDIR HITBOX",
@@ -921,7 +914,7 @@ local menuData = {
         "SER GUARDIA",
         "SER PRISIONERO",
     },
-    ["CRIMINAL"] = {
+    ["FARM"] = {
         "ATURDIR A LOS SHERIFFS",
         "TP A TAREA",
         "AUTO TP A TAREA",
@@ -1024,8 +1017,8 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "KILL AURA (EQUIPAR BATON)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text64/refs/heads/main/Text64.lua"))()
+        elseif opt == "AUTO RENACER" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text481/refs/heads/main/Text481.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
