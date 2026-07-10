@@ -235,7 +235,7 @@ local noToggleButtons = {
     ["GET THE TOOL SPAWN DECOY"] = true,
     ["OBTENER SHIFTLOCK"] = true,
     ["TP A JUGADOR"] = true,
-    ["SER FUERTE"] = true,
+    ["MULTI SALTOS INFINITOS"] = true,
     ["COMPLETAR OBBY"] = true,
     ["COCINAR GENTE (BOTON)"] = true,  
     ["TP TO PLAYER"] = true,
@@ -879,7 +879,7 @@ local menuData = {
     },
     ["AUTO"] = {
         "AUTO GANAR VELOCIDAD",
-        "AUTO GANAR VICTORIA",
+        "AUTO GANAR VICTORIAS",
         "AUTO RENACER",
         "DAÑO EN BLOQUEO",
         "DAÑO POR DEFECTO",
@@ -891,7 +891,7 @@ local menuData = {
         "FLING PLAYER",
     },
     ["OP"] = {
-        "SALTOS INFINITOA",
+        "MULTI SALTOS INFINITOS",
         "KILL AURA (EQUIPAR BATON)",
         "RANGO",
         "EXPANDIR HITBOX",
@@ -1023,11 +1023,11 @@ if topTitle then
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
                             
-        elseif opt == "OBTENER TODAS LAS TOOLS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text462/refs/heads/main/Text462.lua"))()
+        elseif opt == "MULTI SALTOS INFINITOS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text482/refs/heads/main/Text482.lua"))()
                             
-        elseif opt == "AUTO DISPARAR (EQUIPAR MINIGUN)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text463/refs/heads/main/Text463.lua"))()
+        elseif opt == "AUTO GANAR VICTORIAS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text483/refs/heads/main/Text483.lua"))()
                             
         elseif opt == "ACTIVAR MODIFICACION PARA EL BAZOOKA" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text464/refs/heads/main/Text464.lua"))()
