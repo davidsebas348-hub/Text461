@@ -181,7 +181,7 @@ local buttonTitles = {
     ["ACTIVAR CONFIGURACIÓN"] = "CONFIGURAR TOOLS",
     ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
     
-    ["NOMBRE DE EL JUGOR"] = "JUGADORES",
+    ["TP A MUNDO 2"] = "MUNDOS",
     
 
     ["AUTO SACAR VOLANDO A TODOS"] = "FLING",
@@ -232,7 +232,7 @@ local noToggleButtons = {
     ["SER GUARDIA"] = true,
     ["SER PRISIONERO"] = true,
     ["PARAR EL TIEMPO"] = true,  
-    ["GET THE TOOL SPAWN DECOY"] = true,
+    ["TP A MUNDO 2"] = true,
     ["OBTENER SHIFTLOCK"] = true,
     ["TP A JUGADOR"] = true,
     ["MULTI SALTOS INFINITOS"] = true,
@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","AUTO","GANAR/SPEEDRUN","TOOL/OP","TROLL","TELEPORT/ETAPA","COIN","EXTRA","FPS"}
+local menuOrder = {"MAIN","ESP","OP","AUTO","TROLL","TELEPORT","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -898,9 +898,8 @@ local menuData = {
         "TAMAÑO",
         "TRANSPARENCIA 0-1",
     },
-    ["TELEPORT/ETAPA"] = {
-        "ESCRIBE LA ETAPA QUE QUIERAS IR",
-        "ESTAR EN LA ETAPA 99.900M",
+    ["TELEPORT"] = {
+        "TP A MUNDO 2",
         "TP TOOL",
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
@@ -1029,8 +1028,8 @@ if topTitle then
         elseif opt == "AUTO GANAR VICTORIAS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text483/refs/heads/main/Text483.lua"))()
                             
-        elseif opt == "ACTIVAR MODIFICACION PARA EL BAZOOKA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text464/refs/heads/main/Text464.lua"))()
+        elseif opt == "TP A MUNDO 2" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text484/refs/heads/main/Text484.lua"))()
 
         elseif opt == "AUTO SACAR VOLANDO A TODOS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text465/refs/heads/main/Text465.lua"))()
