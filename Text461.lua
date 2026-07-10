@@ -236,7 +236,7 @@ local noToggleButtons = {
     ["OBTENER SHIFTLOCK"] = true,
     ["TP A JUGADOR"] = true,
     ["MULTI SALTOS INFINITOS"] = true,
-    ["COMPLETAR OBBY"] = true,
+    ["AUTO GANAR VELOCIDAD"] = true,
     ["COCINAR GENTE (BOTON)"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
@@ -892,11 +892,6 @@ local menuData = {
     },
     ["OP"] = {
         "MULTI SALTOS INFINITOS",
-        "KILL AURA (EQUIPAR BATON)",
-        "RANGO",
-        "EXPANDIR HITBOX",
-        "TAMAÑO",
-        "TRANSPARENCIA 0-1",
     },
     ["TELEPORT"] = {
         "TP A MUNDO 2",
@@ -1031,8 +1026,8 @@ if topTitle then
         elseif opt == "TP A MUNDO 2" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text484/refs/heads/main/Text484.lua"))()
 
-        elseif opt == "AUTO SACAR VOLANDO A TODOS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text465/refs/heads/main/Text465.lua"))()
+        elseif opt == "AUTO GANAR VELOCIDAD" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text485/refs/heads/main/Text485.lua"))()
                             
         elseif opt == "AUTO SACAR VOLANDO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text466/refs/heads/main/Text466.lua"))()
