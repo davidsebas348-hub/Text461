@@ -861,7 +861,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","SKIP","TELEPORT","FPS"}
+local menuOrder = {"MAIN","ESP","OP","SKIP","TELEPORT","FARM","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -893,6 +893,7 @@ local menuData = {
     },
     ["OP"] = {
         "OBTENER 999 DE SALTOS",
+        "SALTAR TODO",
     },
     ["TELEPORT"] = {
         "TP A MUNDO 2",
@@ -926,8 +927,8 @@ local menuData = {
     ["FPS"] = {
         "Fps Boost"
     },
-    ["COIN"] = {
-        "OBTENER MONEDAS (salirse para desactivar)"
+    ["FARM"] = {
+        "AUTO COMPLETAR"
     },
     ["EXTRA"] = {
         "COCINAR GENTE (BOTON)",
@@ -1022,8 +1023,8 @@ if topTitle then
         elseif opt == "OBTENER SKIPS (Saltos)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text487/refs/heads/main/Text487.lua"))()
                             
-        elseif opt == "AUTO GANAR VICTORIAS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text483/refs/heads/main/Text483.lua"))()
+        elseif opt == "SALTAR TODO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text488/refs/heads/main/Text488.lua"))()
                             
         elseif opt == "TP A MUNDO 2" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text484/refs/heads/main/Text484.lua"))()
