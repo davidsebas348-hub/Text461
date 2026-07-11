@@ -296,8 +296,8 @@ local textboxButtons = {
     variable = "PLAYER",
     url = nil
     },
-    ["DELAY"] = {
-    variable = "TrapDelay",
+    ["ESCRIBE EL VALOR QUE QUIERES TENER"] = {
+    variable = "Veces",
     url = nil
     },
     ["TIEMPO DE RECARGA"] = {
@@ -861,7 +861,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","AUTO","TELEPORT","FPS"}
+local menuOrder = {"MAIN","ESP","OP","SKIP","TELEPORT","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -879,9 +879,9 @@ local menuData = {
     ["ESP"] = {
         "ESP A JUGADORES",
     },
-    ["AUTO"] = {
-        "AUTO GANAR VELOCIDAD",
-        "AUTO GANAR VICTORIAS",
+    ["SKIP"] = {
+        "ESCRIBE EL VALOR QUE QUIERES TENER",
+        "OBTENER SKIPS (Saltos)",
         "AUTO RENACER",
 
     },
@@ -892,7 +892,7 @@ local menuData = {
         "FLING PLAYER",
     },
     ["OP"] = {
-        "MULTI SALTOS INFINITOS",
+        "OBTENER 999 DE SALTOS",
     },
     ["TELEPORT"] = {
         "TP A MUNDO 2",
@@ -1012,14 +1012,15 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "AUTO RENACER" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text481/refs/heads/main/Text481.lua"))()
+        elseif opt == "OBTENER 999 DE SALTOS" then
+            getgenv().Veces = 999
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text487/refs/heads/main/Text487.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
                             
-        elseif opt == "MULTI SALTOS INFINITOS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text482/refs/heads/main/Text482.lua"))()
+        elseif opt == "OBTENER SKIPS (Saltos)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text487/refs/heads/main/Text487.lua"))()
                             
         elseif opt == "AUTO GANAR VICTORIAS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text483/refs/heads/main/Text483.lua"))()
