@@ -44,7 +44,7 @@ local doubleButtons = {
 -- poner título arriba de tal botón 
 local topTitles = {
     ["ACTIVAR MODFICACIÓN"] = "MODIFICAR TOOLS",
-    ["TP TOOL"] = "TELEPORT",
+    ["TP T"] = "TELEPORT",
     ["AUTO GANAR EN LA HABILIDAD Juicio Final"] = "GANAR",
     ["SPEED"] = "PLAYER",
 }
@@ -182,6 +182,8 @@ local buttonTitles = {
     ["AUTO RECOLECTAR DINERO (RAPIDO)"] = "RECOLECCIÓN",
     
     ["TP A MUNDO 2"] = "MUNDOS",
+    ["TP TOOL"] = "CLICK",
+    ["NOMBRE DEL JUGADOR"] = "JUGADORES",
     
 
     ["AUTO SACAR VOLANDO A TODOS"] = "FLING",
