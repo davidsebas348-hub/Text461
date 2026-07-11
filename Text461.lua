@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL  (1+ SPEED NINJA ESCAPE)
+-- SBS HUB COMPLETO FINAL  (ESCAPE 99 ROOMS)
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -486,7 +486,7 @@ end
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1,0,0,50)
 title.BackgroundColor3 = Color3.fromRGB(0,0,0)
-title.Text = "SBS HUB | 1+ SPEED NINJA ESCAPE"
+title.Text = "SBS HUB | ESCAPE 99 ROOMS"
 title.TextColor3 = Color3.fromRGB(255,255,255)
 title.Font = Enum.Font.GothamBold
 title.TextScaled = true
