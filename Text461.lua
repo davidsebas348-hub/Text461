@@ -239,7 +239,7 @@ local noToggleButtons = {
     ["TP A JUGADOR"] = true,
     ["MULTI SALTOS INFINITOS"] = true,
     ["AUTO GANAR VELOCIDAD"] = true,
-    ["COCINAR GENTE (BOTON)"] = true,  
+    ["AUTO COMPLETAR"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
 }
@@ -896,7 +896,6 @@ local menuData = {
         "SALTAR TODO",
     },
     ["TELEPORT"] = {
-        "TP A MUNDO 2",
         "TP TOOL",
         "NOMBRE DE EL JUGADOR",
         "TP A JUGADOR",
@@ -1026,8 +1025,8 @@ if topTitle then
         elseif opt == "SALTAR TODO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text488/refs/heads/main/Text488.lua"))()
                             
-        elseif opt == "TP A MUNDO 2" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text484/refs/heads/main/Text484.lua"))()
+        elseif opt == "AUTO GANAR" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text489/refs/heads/main/Text489.lua"))()
 
         elseif opt == "AUTO GANAR VELOCIDAD" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text485/refs/heads/main/Text485.lua"))()
