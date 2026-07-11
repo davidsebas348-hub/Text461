@@ -1026,7 +1026,7 @@ if topTitle then
         elseif opt == "SALTAR TODO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text488/refs/heads/main/Text488.lua"))()
                             
-        elseif opt == "AUTO GANAR" then
+        elseif opt == "AUTO COMPLETAR" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text489/refs/heads/main/Text489.lua"))()
 
         elseif opt == "AUTO GANAR VELOCIDAD" then
