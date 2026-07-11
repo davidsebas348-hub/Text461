@@ -26,7 +26,7 @@ local numericBoxes = {
     ["1 = 20"] = true,
     ["VELOCIDAD DE EL DISPARO"] = true,
     ["DAÑO DE EL DISPARO"] = true,
-    ["FUERZA DE EL DISPARO"] = true,
+    ["ESCRIBE EL VALOR QUE QUIERES TENER"] = true,
     ["DAÑO"] = true,
     ["DAÑO EN BLOQUEO"] = true,
     ["FUERZA"] = true,
@@ -183,7 +183,7 @@ local buttonTitles = {
     
     ["TP A MUNDO 2"] = "MUNDOS",
     ["TP TOOL"] = "CLICK",
-    ["NOMBRE DEL JUGADOR"] = "JUGADORES",
+    ["NOMBRE DE EL JUGADOR"] = "JUGADORES",
     
 
     ["AUTO SACAR VOLANDO A TODOS"] = "FLING",
@@ -242,6 +242,9 @@ local noToggleButtons = {
     ["AUTO COMPLETAR"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
+    ["OBTENER 999 DE SALTOS"] = true,
+    ["SALTAR TODO"] = true,
+    ["OBTENER SKIPS (Saltos)"] = true,
 }
 
 -- BOTONES SIN EFECTO VERDE
@@ -882,8 +885,6 @@ local menuData = {
     ["SKIP"] = {
         "ESCRIBE EL VALOR QUE QUIERES TENER",
         "OBTENER SKIPS (Saltos)",
-        "AUTO RENACER",
-
     },
     ["LOBBY"] = {
         "TOUCH FLING",
