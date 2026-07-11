@@ -481,7 +481,7 @@ end
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1,0,0,50)
 title.BackgroundColor3 = Color3.fromRGB(0,0,0)
-title.Text = "SBS HUB | BARRY'S PRISON RUN"
+title.Text = "SBS HUB | 1+ SPEED NINJA ESCAPE"
 title.TextColor3 = Color3.fromRGB(255,255,255)
 title.Font = Enum.Font.GothamBold
 title.TextScaled = true
@@ -859,7 +859,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","AUTO","TROLL","TELEPORT","FPS"}
+local menuOrder = {"MAIN","ESP","OP","AUTO","TELEPORT","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -881,8 +881,7 @@ local menuData = {
         "AUTO GANAR VELOCIDAD",
         "AUTO GANAR VICTORIAS",
         "AUTO RENACER",
-        "DAÑO EN BLOQUEO",
-        "DAÑO POR DEFECTO",
+
     },
     ["LOBBY"] = {
         "TOUCH FLING",
