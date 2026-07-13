@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL  (ESCAPE 99 ROOMS)
+-- SBS HUB COMPLETO FINAL  (Hyper Speed Runner)
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -238,7 +238,7 @@ local noToggleButtons = {
     ["OBTENER SHIFTLOCK"] = true,
     ["TP A JUGADOR"] = true,
     ["MULTI SALTOS INFINITOS"] = true,
-    [""] = true,
+    ["SEMI-INMUNE"] = true,
     ["AUTO COMPLETAR"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
@@ -486,7 +486,7 @@ end
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1,0,0,50)
 title.BackgroundColor3 = Color3.fromRGB(0,0,0)
-title.Text = "SBS HUB | ESCAPE 99 ROOMS"
+title.Text = "SBS HUB | HYPER SPEED RUNNER"
 title.TextColor3 = Color3.fromRGB(255,255,255)
 title.Font = Enum.Font.GothamBold
 title.TextScaled = true
@@ -864,7 +864,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","AUTO","TELEPORT","FARM","FPS"}
+local menuOrder = {"MAIN","ESP","OP","AUTO","TELEPORT","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -894,8 +894,7 @@ local menuData = {
         "FLING PLAYER",
     },
     ["OP"] = {
-        "OBTENER 999 DE SALTOS",
-        "SALTAR TODO",
+        "SEMI-INMUNE",
     },
     ["TELEPORT"] = {
         "TP TOOL",
@@ -1039,8 +1038,8 @@ if topTitle then
         elseif opt == "AUTO GANAR VICTORIAS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text493/refs/heads/main/Text493.lua"))()
 
-        elseif opt == "ACTIVAR CONFIGURACIÓN" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text467/refs/heads/main/Text467.lua"))()
+        elseif opt == "SEMI-INMUNE" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text494/refs/heads/main/Text494.lua"))()
                             
         elseif opt == "AUTO MATAR A TODOS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text468/refs/heads/main/Text468.lua"))()
