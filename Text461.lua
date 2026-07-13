@@ -864,7 +864,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","SKIP","TELEPORT","FARM","FPS"}
+local menuOrder = {"MAIN","ESP","OP","AUTO","TELEPORT","FARM","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -882,9 +882,10 @@ local menuData = {
     ["ESP"] = {
         "ESP A JUGADORES",
     },
-    ["SKIP"] = {
-        "ESCRIBE EL VALOR QUE QUIERES TENER",
-        "OBTENER SKIPS (Saltos)",
+    ["AUTO"] = {
+        "AUTO GANAR VELOCIDAD",
+        "AUTO GANAR VICTORIAS",
+        "AUTO RENACER",
     },
     ["LOBBY"] = {
         "TOUCH FLING",
@@ -1030,7 +1031,7 @@ if topTitle then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text489/refs/heads/main/Text489.lua"))()
 
         elseif opt == "AUTO GANAR VELOCIDAD" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text485/refs/heads/main/Text485.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text491/refs/heads/main/Text491.lua"))()
                             
         elseif opt == "AUTO SACAR VOLANDO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text466/refs/heads/main/Text466.lua"))()
