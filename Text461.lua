@@ -238,7 +238,7 @@ local noToggleButtons = {
     ["OBTENER SHIFTLOCK"] = true,
     ["TP A JUGADOR"] = true,
     ["MULTI SALTOS INFINITOS"] = true,
-    ["AUTO GANAR VELOCIDAD"] = true,
+    [""] = true,
     ["AUTO COMPLETAR"] = true,  
     ["TP TO PLAYER"] = true,
     ["FLING PLAYER"] = true,
@@ -1033,8 +1033,8 @@ if topTitle then
         elseif opt == "AUTO GANAR VELOCIDAD" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text491/refs/heads/main/Text491.lua"))()
                             
-        elseif opt == "AUTO SACAR VOLANDO" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text466/refs/heads/main/Text466.lua"))()
+        elseif opt == "AUTO SACAR RENACER" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text492/refs/heads/main/Text492.lua"))()
                             
         elseif opt == "EXPANDIR HITBOX" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text368/refs/heads/main/Text368.lua"))()
