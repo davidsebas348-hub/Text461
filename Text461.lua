@@ -911,9 +911,7 @@ local menuData = {
         "SER PRISIONERO",
     },
     ["FARM"] = {
-        "ATURDIR A LOS SHERIFFS",
-        "TP A TAREA",
-        "AUTO TP A TAREA",
+        "AUTO GANAR VICTORIAS",
     },
     ["TROLL"] = {
         "LAG SERVER (EQUIPAR BOMBA)",
@@ -1013,9 +1011,8 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "OBTENER 999 DE SALTOS" then
-            getgenv().Veces = 999
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text487/refs/heads/main/Text487.lua"))()
+        elseif opt == "AUTO GANAR VICTORIAS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text496/refs/heads/main/Text496.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
