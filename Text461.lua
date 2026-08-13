@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL  (Hyper Speed Runner)
+-- SBS HUB COMPLETO FINAL  (Color Or Die)
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -883,9 +883,8 @@ local menuData = {
         "ESP A JUGADORES",
     },
     ["AUTO"] = {
-        "AUTO GANAR VELOCIDAD",
-        "AUTO GANAR VICTORIAS",
-        "AUTO RENACER",
+        "AUTO RECOGER OBJETO",
+        "AUTO ABIR PUERTAS",
     },
     ["LOBBY"] = {
         "TOUCH FLING",
@@ -911,7 +910,7 @@ local menuData = {
         "SER PRISIONERO",
     },
     ["FARM"] = {
-        "AUTO GANAR VICTORIAS",
+        "AUTO GANAR VICTORIAS (CHAPTER 1)",
     },
     ["TROLL"] = {
         "LAG SERVER (EQUIPAR BOMBA)",
@@ -1011,14 +1010,14 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "AUTO GANAR VICTORIAS" then
+        elseif opt == "AUTO GANAR VICTORIAS (CHAPTER 1)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text496/refs/heads/main/Text496.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
                             
-        elseif opt == "OBTENER SKIPS (Saltos)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text487/refs/heads/main/Text487.lua"))()
+        elseif opt == "GODMODE" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text497/refs/heads/main/Text497.lua"))()
                             
         elseif opt == "SALTAR TODO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text488/refs/heads/main/Text488.lua"))()
