@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text498/refs/heads/main/Text498.lua",true))()
+-- crear atributo CurrentColor (color actual)
 -- ======================
 -- SBS HUB COMPLETO FINAL  (Color Or Die)
 -- ======================
@@ -893,7 +895,7 @@ local menuData = {
         "FLING PLAYER",
     },
     ["OP"] = {
-        "SEMI-INMUNE",
+        "GODMODE",
     },
     ["TELEPORT"] = {
         "TP TOOL",
