@@ -1,5 +1,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text498/refs/heads/main/Text498.lua",true))()
 -- crear atributo CurrentColor (color actual)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text499/refs/heads/main/Text499.lua",true))()
+-- crear atributo CurrentTool (Tool actual)
 -- ======================
 -- SBS HUB COMPLETO FINAL  (Color Or Die)
 -- ======================
