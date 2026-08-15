@@ -888,7 +888,7 @@ local menuData = {
     },
     ["AUTO"] = {
         "AUTO RECOGER OBJETO",
-        "AUTO ABIR PUERTAS",
+        "AUTO ABRIR PUERTAS",
     },
     ["LOBBY"] = {
         "TOUCH FLING",
@@ -1023,8 +1023,8 @@ if topTitle then
         elseif opt == "GODMODE" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text497/refs/heads/main/Text497.lua"))()
                             
-        elseif opt == "SALTAR TODO" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text488/refs/heads/main/Text488.lua"))()
+        elseif opt == "AUTO ABRIR PUERTAS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text500/refs/heads/main/Text500.lua"))()
                             
         elseif opt == "AUTO COMPLETAR" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text489/refs/heads/main/Text489.lua"))()
