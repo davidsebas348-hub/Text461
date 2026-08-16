@@ -887,7 +887,7 @@ local menuData = {
         "ESP A JUGADORES",
     },
     ["AUTO"] = {
-        "AUTO RECOGER OBJETO",
+        "AUTO RECOGER OBJETOS",
         "AUTO ABRIR PUERTAS",
     },
     ["LOBBY"] = {
@@ -1029,8 +1029,8 @@ if topTitle then
         elseif opt == "AUTO COMPLETAR" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text489/refs/heads/main/Text489.lua"))()
 
-        elseif opt == "AUTO GANAR VELOCIDAD" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text491/refs/heads/main/Text491.lua"))()
+        elseif opt == "AUTO RECOGER OBJETOS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text501/refs/heads/main/Text501.lua"))()
                             
         elseif opt == "AUTO RENACER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text492/refs/heads/main/Text492.lua"))()
