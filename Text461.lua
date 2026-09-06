@@ -865,7 +865,7 @@ local scrollConfig = {
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","ESP","OP","AUTO","TELEPORT","FPS"}
+local menuOrder = {"MAIN","ESP","COMBATE","AUTO","TELEPORT","LABELS","FPS"}
 local menuData = {
     ["MAIN"] = {
     "INVISIBLE",
@@ -881,7 +881,7 @@ local menuData = {
     "FLY",
     },
     ["ESP"] = {
-        "ESP A JUGADORES",
+        "ESP ULTI",
     },
     ["AUTO"] = {
         "AUTO RECOGER OBJETOS",
@@ -928,9 +928,9 @@ local menuData = {
     ["FARM"] = {
         "AUTO COMPLETAR"
     },
-    ["EXTRA"] = {
-        "COCINAR GENTE (BOTON)",
-        "SER FUERTE",
+    ["LABELS"] = {
+        "DETECTAR PING",
+        "DETECTAR FPS",
     },
     ["YOUTUBE"] = {
         "YOUTUBE:SBS HUB",
@@ -1023,8 +1023,8 @@ if topTitle then
         elseif opt == "CONTRATAQUE AUTOMÁTICO A M1" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text502/refs/heads/main/Text502.lua"))()
                             
-        elseif opt == "AUTO COMPLETAR" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text489/refs/heads/main/Text489.lua"))()
+        elseif opt == "ESP ULTI" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text503/refs/heads/main/Text503.lua"))()
 
         elseif opt == "AUTO RECOGER OBJETOS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text501/refs/heads/main/Text501.lua"))()
