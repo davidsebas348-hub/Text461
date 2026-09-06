@@ -887,8 +887,8 @@ local menuData = {
         "AUTO RECOGER OBJETOS",
         "AUTO ABRIR PUERTAS",
     },
-    ["LOBBY"] = {
-        "TOUCH FLING",
+    ["GAMEPASS"] = {
+        "MAS ESPACIO PARA EMOTES",
         "POWER",
         "PLAYER NAME.",
         "FLING PLAYER",
@@ -1037,8 +1037,8 @@ if topTitle then
         elseif opt == "BLOQUEO AUTOMÁTICO A M1" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text241/refs/heads/main/Text241.lua"))()
 
-        elseif opt == "SEMI-INMUNE" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text494/refs/heads/main/Text494.lua"))()
+        elseif opt == "SMAS ESPACIO PARA EMOTES" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text504/refs/heads/main/Text504.lua"))()
                             
         elseif opt == "AUTO MATAR A TODOS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text468/refs/heads/main/Text468.lua"))()
