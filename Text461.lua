@@ -1,7 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text498/refs/heads/main/Text498.lua",true))()
--- crear atributo CurrentColor (color actual)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text499/refs/heads/main/Text499.lua",true))()
--- crear atributo CurrentTool (Tool actual)
+
 -- ======================
 -- SBS HUB COMPLETO FINAL  (Color Or Die)
 -- ======================
@@ -908,8 +905,8 @@ local menuData = {
         "PARAR EL TIEMPO",
         "COMPLETAR OBBY",
     },
-    ["GUARDIA"] = {
-        "AUTO ARRESTAR",
+    ["COMBATE"] = {
+        "AUTO WALLCOMBO",
         "SER GUARDIA",
         "SER PRISIONERO",
     },
@@ -1014,8 +1011,8 @@ if topTitle then
         if opt == "RESET STATS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Reset-speed-jumpPower-y-gravedad-/refs/heads/main/Reset.lua"))()
 
-        elseif opt == "AUTO GANAR VICTORIAS (CHAPTER 1)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text496/refs/heads/main/Text496.lua"))()
+        elseif opt == "AUTO WALLCOMBO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text233/refs/heads/main/Text233.lua"))()
             
         elseif opt == "" then
             loadstring("getgenv().HIGHLIGHT_ME = not getgenv().HIGHLIGHT_ME")()
