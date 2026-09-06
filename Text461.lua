@@ -358,8 +358,8 @@ local textboxButtons = {
     variable = "Distance",
     url = nil
     },
-    ["VELOCIDAD DEL PROYECTIL"] = {
-    variable = "BulletSpeed",
+    ["DISTANCIA DE LA DETECCIÓN DEL M1"] = {
+    variable = "AUTO_F_DISTANCE",
     url = nil
     },
     ["GANANCIA PARA LA ESPECIAL"] = {
@@ -909,6 +909,8 @@ local menuData = {
         "AUTO WALLCOMBO",
         "CONTRATAQUE AUTOMÁTICO A M1",
         "DISTANCIA DE LA DETECCIÓN DE M1",
+        "BLOQUEO AUTOMÁTICO A M1",
+        "DISTANCIA DE LA DETECCIÓN DEL M1",
     },
     ["FARM"] = {
         "AUTO GANAR VICTORIAS (CHAPTER 1)",
@@ -1032,8 +1034,8 @@ if topTitle then
         elseif opt == "CONTADOR DE FPS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Detectar_fps/refs/heads/main/Fps.lua"))()
                             
-        elseif opt == "AUTO GANAR VICTORIAS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text493/refs/heads/main/Text493.lua"))()
+        elseif opt == "BLOQUEO AUTOMÁTICO A M1" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text241/refs/heads/main/Text241.lua"))()
 
         elseif opt == "SEMI-INMUNE" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text494/refs/heads/main/Text494.lua"))()
