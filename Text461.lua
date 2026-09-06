@@ -929,8 +929,8 @@ local menuData = {
         "AUTO COMPLETAR"
     },
     ["LABELS"] = {
-        "DETECTAR PING",
-        "DETECTAR FPS",
+        "CONTADOR DE PING",
+        "CONTADOR DE FPS",
     },
     ["YOUTUBE"] = {
         "YOUTUBE:SBS HUB",
@@ -1026,11 +1026,11 @@ if topTitle then
         elseif opt == "ESP ULTI" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text503/refs/heads/main/Text503.lua"))()
 
-        elseif opt == "AUTO RECOGER OBJETOS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text501/refs/heads/main/Text501.lua"))()
+        elseif opt == "CONTADOR DE PING" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Detector_ping/refs/heads/main/Ping.lua"))()
                             
-        elseif opt == "AUTO RENACER" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text492/refs/heads/main/Text492.lua"))()
+        elseif opt == "CONTADOR DE FPS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Detectar_fps/refs/heads/main/Fps.lua"))()
                             
         elseif opt == "AUTO GANAR VICTORIAS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text493/refs/heads/main/Text493.lua"))()
